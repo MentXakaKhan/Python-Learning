@@ -1,0 +1,61 @@
+python3 //REPL session, good for testing code out
+
+python 3 test1.py //runs files in python
+var="Hello World"
+var
+ //will print var
+ 
+ ctrl d //to exit
+ #! hashbang is interpreter statement
+ 
+                                                            PYTHON SCRIPTS
+  
+         
+       nano test.py //creates the file
+       ctrl x //exit
+       
+       
+       
+       ///bash
+       chmod +x test.py
+       ./test1.py
+       ls -la test1.py
+                                                               VIM
+                                                          set tabstop=4
+                                                          set shiftwidht=4
+                                                          set expandtab
+                                                          set encoding=utf-8
+                                                          set number
+                                                          ser autoindent
+                                                          syntax enable
+                                                          filetype indent on
+   CLASS STRING LITERAL
+   'A string'
+   'Another one'                                                                            
+   '''A string
+   on two lines'''
+   print('Let\'s go to the store')
+   or
+   print("Let's go to the store")
+   
+   STRING METHODS
+   strng = "A string"
+   strng.upper()
+   strng.lower()
+   strng.replace('A','The')
+   var = strng.replace('A'.'The")
+   "A" + "C"
+   prints "AC"
+                                                                                                              INTEGER
+                                                                                                              5
+                                                                                                              42
+                                                                     FLOAT
+                                                                     42.1
+                                                                     33.3
+                                                                     FLOAT and INTEGER math results in a FLOAT
+                        MATH OPERATORS
+                        3 + 3 // 6
+                        var1 = 5
+                        var2 = 8
+                        var1 + var2 //13
+                             
