@@ -1,0 +1,36 @@
+FUNCTIONS(FOR CODE THAT NEEDS TO BE DONE MUTIPLE TIMES)
+
+arg1 = 6
+arg2 = 4
+
+def multiply(var1,var2): #this is the function inlucding all indented tabs underneath
+    print(var1 * var2)
+
+def divide(var1,var2):
+    pass ##pass is just a placeholder (indented things need to have code, cant be empty underneath)
+
+def addition(var,var2):
+    pass
+
+def subtraction(var1,var2):
+    pass
+
+multiply(arg1,arg2)  #calls the function
+
+
+
+PYCORE 8
+08 - Python Activity
+10
+coding python core
+Use python to produce code below that will perform the following:
+
+Create a function named domath that will accept 3 parameters.
+The function will add the first two parameters and multiply this sum by the third parameter.
+You can select the identifiers for each of the parameters.
+The resulting product will be returned to the caller.
+'''
+def domath(var1, var2, var3):
+    num = (var1 + var2) * var3
+    return num
+'''
