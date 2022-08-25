@@ -1,0 +1,96 @@
+WHILE LOOPS ##repeatedly do this code until its done
+while <condition>:
+    #code to do
+    
+num = 0
+while num < 5:
+    print(num)
+    #num += 1 is the same as num = num + 1
+    num = num + 1
+    
+############################################################    
+    
+num = 0
+while num < 10:
+    if num % 2: #prints odds if not num % 2 then will print evens
+            print(num)
+####################################################            
+ num = 0
+while True:
+    num += 1
+    print(num)
+    if num >= 10:
+        break
+   ####################################################     
+        PRINT ALL NUMBERS
+        num = 0
+while True:
+    num += 1
+    print(num)
+    if num % 2:
+            continue
+    if num >= 10:
+        break
+        #################################################
+        
+        ONLY PRINT even NUMBERS
+        num = 0
+while True:
+    num += 1
+    if num % 2:
+            continue
+    print(num)
+    if num >= 10:
+        break
+        
+ ###########################################
+ lst = ['apple', 'orange', 'banana', 'berry', 'kiwi', 'grape']
+index = 0
+while index < len(lst):
+    print(lst[index])
+    index += 1
+ ###########################################
+ 
+ lst = ['apple', 'orange', 'banana', 'berry', 'kiwi', 'grape']
+
+lst[7:1:-1] #go b ackwards
+lst[::-1]#start and stop value blank so starts and end and goes back to beginning
+
+
+#################################################
+09 - Python Activity
+Use python to produce code below that will perform the following:
+
+Read multiple lines from the user on standard input until an empty string is read.
+Return a list of all these lines without line terminators
+Each line should be reversed from how it is read in.
+def reverseit():
+    lst = []
+    while True:
+        userinput = input('Type in here:')
+        if not userinput:
+            break
+        userinput = userinput[::-1]
+        lst.append(userinput)
+    return lst
+print(reverseit())
+
+####################################################
+00B - Guess Number
+Modify code below and implement guess_number so that it repeatedly asks the user for a number between 0 and 100, inclusive. 
+If the user correctly guesses the value of the given argument n, print 'WIN' and return. 
+Otherwise, indicate whether the guess was too high or too low.
+def guess_number(n):
+    while True:
+        print('Guess a number between 0 and 100')
+        userinput = int(input('Insert your guess:'))
+        if userinput > 23:
+            print('Too high')
+        elif userinput < 23:
+            print('Too low')
+        elif userinput == 23:
+            print('WIN')
+            break
+            return
+
+guess_number(23)
