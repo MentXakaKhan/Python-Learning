@@ -34,3 +34,12 @@ def domath(var1, var2, var3):
     num = (var1 + var2) * var3
     return num
 '''
+num1 = 2
+num2 =37
+num3 = 1
+
+def domath(var1, var2, var3):
+    num = (var1 + var2) * var3
+    return num
+
+print('The answer was {}'.format(domath(num1, num2, num3))) #if you want to print
