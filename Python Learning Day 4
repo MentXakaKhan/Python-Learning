@@ -21,3 +21,68 @@ for fruit in shoppinglist:
 
 for x in list(range(5))
 print(x)
+
+
+
+####
+test number, grab letter, if odd or even upper or lower case, thena dd to string
+
+Use python to produce code below that will perform the following:
+
+Given a mixed case string as parameter s
+Capitalize every letter with an even index within the string.
+Lowercase every letter with an odd index within the string.
+Return the resulting string.
+Example - Given: "ABCDEF ghijkl" Return: "AbCdEf gHiJkL"
+
+
+def leetString(s):
+    empty = []
+    for index in range(len(s)):
+        if index % 2 == 0:
+            empty.append(s[index].upper())
+        else:
+            empty.append(s[index].lower())
+    return ''.join(empty)
+    
+    
+    ANOTHER WAY###########
+    
+    def leetString(s):
+    answer = ''
+    num = 0
+    for c in s:
+        if num % 2 == 0:
+            answer += c.upper()
+        else:
+            answer += c.lower()
+        num += 1
+    return answer
+    
+    YET ANOTHER WAY############
+    
+    ############################
+    #######################
+    ################################
+    
+    FILE IO
+    
+    fp = open('/etc/passwd')
+
+    fp.close()
+    
+    fp = open('/etc/passwd','r')
+
+fp.read()
+
+fp.readline()
+
+fp.readlines()
+
+fp = open('text.txt','w') ##'w' is write 'r' read and 'a' is append
+
+fp.write('some line' + '\n') #creates new line
+
+fp.flush() #writes everything right now, effectively save function
+
+
