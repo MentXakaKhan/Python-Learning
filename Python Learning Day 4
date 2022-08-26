@@ -73,16 +73,21 @@ def leetString(s):
     
     fp = open('/etc/passwd','r')
 
-fp.read()
+fp.read() #reads entire file as one large string
 
-fp.readline()
+fp.readline() #gives list variable
 
 fp.readlines()
 
 fp = open('text.txt','w') ##'w' is write 'r' read and 'a' is append
 
-fp.write('some line' + '\n') #creates new line
+fp.write('some line' + '\n') #creates new line, takes string data type
+
+fp.writelines() #deals with list variable
 
 fp.flush() #writes everything right now, effectively save function
 
+rm.passwd.txt #rm. removes something
 
+for line in fp: #iterating over a file object
+    fo.write(line.upper()) #.upper not needed just demonstrating add on
