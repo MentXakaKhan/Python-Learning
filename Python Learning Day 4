@@ -91,3 +91,97 @@ rm.passwd.txt #rm. removes something
 
 for line in fp: #iterating over a file object
     fo.write(line.upper()) #.upper not needed just demonstrating add on
+    
+    
+    
+  ###############################################################
+  atuple = []
+def make_tuple():
+    for num in range(0,101,10):
+        if num % 10 == 0:
+            atuple.append(num)
+    del atuple[0]
+    return tuple(atuple)
+
+print(make_tuple()) #dont put into test engine
+
+
+
+
+
+
+
+    #0-100 multiples of 10, 100 % 10 == 0
+    #tuple()
+    
+    
+    ##############################################################
+    
+    13-1 - Python Activity
+10
+coding python core
+def make_tuple(a,b):
+    '''
+    Returns a tuple of the multiples of 10 from a to b inclusive.
+    Args:
+        None
+    Returns:
+        tuple: a tuple of the multiples of 10 from a to b inclusive
+    
+    
+    def make_tuple(a,b):
+    atuple = []
+    for num in range(a,b + 1):
+        if num % 10 == 0:
+            atuple.append(num)
+        
+    return tuple(atuple)
+
+print(make_tuple(100,200)) #dont put into test engine
+
+
+#########################################
+14 - Python Activity
+10
+coding python core
+def strings():
+    '''
+    Returns a tuple of the following strings:
+
+    (empty string)
+
+    Physics is the universe's operating system
+
+    Args:
+        None
+    Returns:
+        tuple: a tuple of strings
+     '''
+    pass
+    
+    
+    def strings():
+    atuple = ['Physics is the universe\'s operating system']
+    btuple = []
+    return tuple(btuple + atuple)
+    
+    
+    ################################################
+    
+    
+16 - Python Activity
+10
+coding python core
+def reverse_string(strng):
+    '''
+    Returns a copy of the given string reversed
+    Args:
+        strng (str): a string of alphanumeric characters
+    Returns:
+        str: a copy of the given string reversed
+    '''    
+    pass
+    
+    def reverse_string(strng):
+    strng = strng[::-1]
+    return strng
