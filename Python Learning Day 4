@@ -1,0 +1,23 @@
+######For LOOPs
+
+for local_var in <collection>:
+    <code to do>
+
+shoppinglist = ['Apple', 'Berry', 'Juice']
+
+for fruit in shoppinglist:
+    print('I want to purchase {}.'.format(fruit))
+
+
+
+
+
+    #####################Range
+    range(10)
+    range(0,10)  #can take up to 3 int values, 1st and 2nd numbers list within that range, 3rd number makes it a step value for the numbers between 1st and 2nd
+    list(range(10))
+
+
+
+for x in list(range(5))
+print(x)
