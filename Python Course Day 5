@@ -61,3 +61,15 @@ def linenums(inpath, outpath):
        print(Sum is {}".format(sum))
     
     doSum(*list(range(1000))
+    
+    
+############################
+    sorted(s,key=len)
+    sorted(s,key=keyFunc,revers=True)
+    
+    
+    
+    ########################3
+    lambda x: x #lambda itemgettingpassed: what you want to do wiith x
+    
+    sorted(s,key=lambda elem: elem[1])
