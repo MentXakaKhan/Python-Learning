@@ -77,7 +77,7 @@ fp.read() #reads entire file as one large string
 
 fp.readline() #gives list variable
 
-fp.readlines()
+fp.readlines() #outputs lst
 
 fp = open('text.txt','w') ##'w' is write 'r' read and 'a' is append
 
