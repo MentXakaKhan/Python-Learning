@@ -1,0 +1,63 @@
+#Use python to produce code below that will perform the following:
+
+#Read file specified by the path in inpath parameter and write all lines to the file specified by the outpath parameter.
+#Before writing out each line, add the line number starting with 1 follow by colon and space.
+def linenums(inpath, outpath):
+    f = open(inpath)
+    lst = f.readlines() 
+    output = list()
+    n = 1
+    for item in lst:
+        output.append(str(n) + ": " + item)
+        n = n + 1
+    fs = open(outpath, 'w')
+    fs.writelines(output)
+    
+    
+    ###############################
+    
+    
+    
+    from _____ import ______ as _____#variable name
+    
+    
+    
+    SETS
+    s = {}
+    t = {}
+    s.add() #adds sets
+    ___ in s
+    s.union(t)
+    s.intersection(t)
+    s.difference(t)
+    set(lst)
+    
+    
+    
+    
+    
+    
+    
+    #add keys ti dict
+    
+    _________['M'] - 1
+    
+    
+    
+    def math(a,b,c):
+      return (a+b) * c
+      
+      
+      
+    math(*lst) #* is operator that states to unpack the collection
+    
+    #######################
+    *args **kwargs
+    
+    def doSum(*args):
+      sum = 0
+      for n in args:
+        sum += n
+       print(Sum is {}".format(sum))
+    
+    doSum(*list(range(1000))
