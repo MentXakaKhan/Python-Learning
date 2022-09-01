@@ -1,0 +1,102 @@
+try:
+  fp = open(file)
+except ERROR:
+  print()
+except FileNotError:
+
+except as err:
+
+else:
+  print(fp.readline())
+finally:
+  print()
+  
+###########################################
+try
+except
+else
+finally
+
+
+###########################################
+CLASSSSSSSSSSSSSSSSSSSEEEEEEEEEEEEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+Polymorphism
+Polymorphism is the provision of a single interface to objects of different types. It provides for having multiple classes derived from the same base class exhibit different behavior even when called through a shared interface.
+
+Demo of polymorphism
+#!/usr/bin/env python3
+
+class Base():
+    def behavior(self):
+        print('Base behavior')
+
+class A(Base):
+    def behavior(self):
+        print('A behavior')
+
+class B(Base):
+    def behavior(self):
+        print('B behavior')
+
+class C(Base):
+    def behavior(self):
+        Base.behavior(self)
+        print('C behavior')
+
+if __name__ == '__main__':
+    l = []
+    l.append(A())
+    l.append(B())
+    l.append(C())
+
+    for i in l:
+        i.behavior()
+        
+        
+        
+        Demo of class declaration and instantiation
+class MyClass:
+    # class attributes, shared by all instances
+    first = 'Albert'
+    last = 'Einstein'
+
+    # method, member function
+    def print_name(self):
+        print('{}, {}'.format(self.last,self.first))
+
+if __name__ == '__main__':
+    me = MyClass()
+    my = MyClass()
+    me.last = 'Dumas' # creates a new instance attribute!
+    me.print_name() # Dumas, Albert
+    my.print_name() # Einstein, Albert
+    
+    
+ This one is confusing Jaffri, goodluck. 
+ 
+ 
+ 
+ 
+ CONTEXT
+ Context Managers
+An object supports the context management protocol if it implements the __enter__ and __exit__ methods.
+
+Demo custom context manager
+#!/usr/bin/env python3
+import time
+
+class Profile:
+
+    def __enter__(self):
+        self.begin = time.perf_counter()
+        return self
+
+    def __exit__(self,exception_type,exception_val,trace):
+        self.duration = time.perf_counter() - self.begin
+
+if __name__ == '__main__':
+    with Profile() as p:
+        time.sleep(5)
+    print('duration: {}s'.format(p.duration))
+   
