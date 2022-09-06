@@ -1028,3 +1028,177 @@ def q1(arr):
             return arr[i]
         i += 1
     return None
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+01 - Whatever floats your boat
+10
+coding python
+Given the floatstr, which is a comma separated string of floats, return a list with each of the floats in the argument as elements in the list.
+
+def q1(floatstr):  
+    pass
+
+
+def q1(floatstr):  
+    splitter = floatstr.split(",")
+    answer = []
+    for x in splitter:
+        answer.append(float(x)) 
+    return(answer)
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+02 - Better than average
+10
+coding python
+Given the variable length argument list, return the average of all the arguments as a float
+
+def q1(*args):
+    pass
+
+def q1(*args):
+    a = sum(args)
+    average = a/(len(args))
+    return(average)
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+03 - It's the end that is important
+10
+coding python
+Given a list (lst) and a number of items (n), return a new list containing the last n entries in lst.
+
+
+def q1(lst,n):
+    pass
+def q1(lst,n):
+    nLST = lst
+    newLST = []
+    runner = (len(lst) -n)
+    for i in range (n):
+        newLST.append(lst[runner])
+        runner += 1
+    return newLST
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+04 - Is there a way to put this into numbers
+10
+coding python
+Given an input string, return a list containing the ordinal numbers of each character in the string in the order found in the input string.
+
+def q1(strng):
+    pass
+def q1(strng):
+    x = []
+    for i in strng:
+        x.append(ord(i))
+    return x
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+05 - Say it a little slower
+10
+coding python
+Given an input string, return a tuple with each element in the tuple containing a single word from the input string in order.
+
+def q1(strng):
+    pass
+
+def q1(strng):
+    x = strng.split(' ')
+    y = tuple(x)
+    return y
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+06 - Given a dictionary (catalog) whose keys are product names and values are product prices per unit and a list of tuples (order) of product names and quantities, compute and return the total value of the order.
+
+Example catalog:
+
+{
+'AMD Ryzen 5 5600X': 289.99,
+'Intel Core i9-9900K': 363.50,
+'AMD Ryzen 9 5900X': 569.99
+}
+Example order:
+
+[
+('AMD Ryzen 5 5600X', 5), 
+('Intel Core i9-9900K', 3)
+]
+Example result:
+
+2540.45
+
+How the above result was computed:
+
+(289.99 * 5) + (363.50 * 3)
+
+def q6(catalog, order):
+    pass
+def q6(catalog, order):
+    total = 0.0
+    for items in order:
+        total = total + (catalog[items[0]]*items[1])
+    return total
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+07 - Alexa, how long is the first line?
+10
+coding python
+Given a filename, open the file and return the length of the first line in the file excluding the line terminator.
+
+def q1(filename):
+    pass
+
+def q1(filename):
+    f =  open(filename,"r")
+    x = len(f.readline())-1
+    return x
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+08 - Let us memorialize this todo list
+10
+coding python
+Given a filename and a list, write each entry from the list to the file on separate lines until a case-insensitive entry of "stop" is found in the list. If "stop" is not found in the list, write the entire list to the file on separate lines.
+
+def q1(filename,lst):
+    pass
+def q1(filename,lst):
+    newlist = []
+    for item in lst:
+        if item.lower() == "stop":
+            break
+        else:
+            newlist.append(item + '\n')
+    f = open(filename, "w")
+    f.writelines(newlist)
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    09 - What is the greeting of the day
+10
+coding python
+Given the military time in the argument miltime, return a string containing the greeting of the day.
+
+0300-1159 "Good Morning"
+1200-1559 "Good Afternoon"
+1600-2059 "Good Evening"
+2100-0259 "Good Night"
+def q1(miltime):
+    pass
+def q1(miltime):
+    if miltime in range(0,259):
+        return 'Good Evening'
+    elif miltime in range(300,1159):
+        return 'Good Morning'
+    elif miltime in range(1200,1559):
+        return 'Good Afternoon'
+    elif miltime in range(1600,2059):
+        return 'Good Night'
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+10 - Why so negative
+10
+coding python
+Given the argument numlist as a list of numbers, return True if all numbers in the list are NOT negative. If any numbers in the list are negative, return False.
+
+def q1(numlist):
+    pass
+def q1(numlist):
+    for item in numlist:
+        if item<0:
+            return False
+        else:
+            return True
