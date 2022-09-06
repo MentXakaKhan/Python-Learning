@@ -1,3 +1,5 @@
+https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/fg.html#_type_conversion
+
 01 - Python Activity
 
 Use python to produce code below that will create several named variables with the specified value:
