@@ -1,0 +1,1637 @@
+
+
+#********************** PLEASE START ON LINE 802 FOR PRACTICE QUESTIONS ****************************************************
+
+
+#print(str.lstrip("-"))
+
+#print(str.replace("peepee", "big"))
+#str.replace(OLD, NEW, [COUNT])
+
+
+
+prices = "$1.99 $9.25 $7.50"
+
+#print(str.replace("p", "e", 1))
+
+#print(str.find("p", 1,))
+#find the element location .find(substring, [start, [end]])
+
+#print(str.count("s", 11))
+
+
+"""email = "   TODD@gmail.com\n"
+stripped = email.strip()
+clean_email = stripped.lower()"""
+
+#print(email)
+#print(clean_email,"\n")
+
+#you can also do this:
+#this is called method chaining
+#not every method will do this
+
+#print(email.strip().lower())
+
+#*****BOOLEANS*******
+
+"""print(type(True))
+age = 21
+print(age > 10)
+print(age < 10)
+print(age >= 10)
+print(age <= 21)
+
+print("a" == "a")
+print("a" != "a")
+
+print(bool(0),1)
+
+print('a' in 'bat',2)
+print('A' in 'bat',3)
+
+print(ord('a'))
+str1 = "ABC"
+str2 = "abc"
+print(str1>str2,4)
+"""
+#*****CONDITIONS*******
+"""first = input("Enter first name ")
+last = input("Enter last name ")
+
+total_length = len(first) + len(last)
+if total_length == 12:
+    print("exactly average")
+elif total_length < 12:
+    print("shorter")
+else:
+    print("longer")"""
+    
+
+"""tweet = input("Type in a tweet here: ")
+
+if len(tweet) < 140:
+    print("This {} char will work!".format(len(tweet)))
+else:
+   
+    print("This {} char tweet is {} chars too long".format(len(tweet), len(tweet)-140))"""
+  
+
+"""unit = input("what unit? ")
+temp = int(input("what temp? "))
+
+if unit == 'f':
+    if temp == 212:
+        print("water boiling")
+    else:
+        print("not boiling")
+elif unit == 'c':
+    if temp == 100:
+        print("water boiling")
+    else:
+        print("not boiling")
+elif unit == 'k':
+    if temp == 373:
+        print("water boiling")
+    else:
+        print("not boiling")"""
+        
+#*****COMPLEX LOGIC********
+"""3 < 4 and 1 < 2
+
+age = 19
+
+if age > 18 and age < 21:
+    print("You can enter but not drink")
+    
+if age > 18:
+    if age < 21:
+        print("You can enter but not drink")
+        
+day = input("Enter day")
+
+if day == 'saturday' or day == 'sunday':
+    print("Weekend")"""
+    
+"""color = input("Enter a color: ")
+if color:
+    print(f"{color} is my fav color!")
+else:
+    print("this is false")
+    
+day = 'tuesday'
+is_vet = False
+age = 56
+
+if a <= 2 or is_vet and day == 'Tuesday':
+    print("youre gay")"""
+    
+
+""""""
+    
+#***********LOOPS PART ONE***********
+
+"""answer = input("Please say hi")
+ 
+while answer != "hi":
+    answer = input("rude, say hi")
+
+print("hi to you too")"""
+
+"""
+
+def number():
+    num = 10
+    while num >= 0:
+        print(f"number is: {num}")
+        num -= 1
+    return num
+
+
+
+def stars():
+    count = 7
+    while count > 0:
+        print("*" * count)
+        count = count - 1
+    
+
+
+import random 
+def dice():
+    roll1 = random.randint(1,6)
+    roll2 = random.randint(1,6)
+    roll_count = 0
+        
+    while roll1 != 1 or roll2 != 1:
+        print(roll1, roll2)
+        roll1 = random.randint(1,6)
+        roll2 = random.randint(1,6)
+        roll_count += 1
+
+    print(f"snake eyes! count: {roll_count}")
+    print(roll1, roll2)
+    
+def word():
+    words = "Tacos"
+    for i in words:
+        print(i)
+
+
+def poop():
+    for num in range(10,1,-1):
+        print(num)
+    
+    count = 10
+    while 1 < count:
+        print(count)
+        count -= 1
+
+def beer():
+    for beers in range(100,0,-1):
+        
+        print(f"{beers} bottles of beer on the wall")
+        print(f"{beers} bottles of beer")
+        if beers == 1:
+            print(f"Take one down, pass it around no more bottles of beer on the wall")
+        else:
+            print(f"Take one down, pass it around {beers-1} bottles of beer on the wall")
+    num_bottles = 99
+    while num_bottles > 0:
+        print(f"{beers} bottles of beer on the wall")
+        print(f"{beers} bottles of beer")
+        if beers == 1:
+            print(f"Take one down, pass it around no more bottles of beer on the wall")
+        else:
+            print(f"Take one down, pass it around {beers-1} bottles of beer on the wall")
+        """
+#********LOOPS PART TWO********
+
+"""for outer in range(1,5):
+    print(outer)
+    for inner in range(1,5):
+        print("\t", inner)"""
+        
+"""from random import randint
+
+die = int(input("How many dice are we rolling? "))
+side = input("How many sides on each die? ")
+
+while True:
+    thing = "|"
+    for i in range(die):
+        roll = randint(1,int(side))
+        thing = thing + f"{roll}|"
+    print(f"{thing}")
+    
+    reply = input("Play again? ")
+    if reply == "q":
+        break"""
+
+"""print("Welcome!")
+p1 = input("Player one name: ")
+p2 = input("Player two name: ")
+current_p = p1
+num_left = 13
+take = 0
+
+while True:
+   
+    print("|" * num_left)
+    print(f"there are {num_left} toothdicks left")
+    p1_take = int(input(f"how many tooth dicks yo want, {current_p}?"))
+    num_left -= int(p1_take)
+    if num_left <= 0:
+        print(f"{current_p} you won dawg!" )
+        break
+    if current_p == p1:
+        current_p == p2
+    else:
+        current_p == p1"""
+
+    
+#*************functions********************
+"""def laugh():
+    print("ha"* 20)
+    
+laugh()
+
+
+def is_even(a):
+    if a % 2 == 0:
+        return True
+    
+    return False
+        
+#print(is_even(13))
+
+def slugify(penis, sep="-"):
+    
+    return penis.strip().lower().replace(" ", sep)
+
+print(slugify("    HELLO world   "))
+
+def count_vowels(cock):
+    count = 0
+    for vowel in cock:
+        if vowel in "aeiou":
+            count += 1
+    return count
+            
+    
+    
+print(count_vowels("aeiou"))
+
+def laugh(strength=2):
+    print("HA" * strength)
+    
+laugh(10)
+laugh()
+
+def greet(msg, person):
+    print(f"{msg}, {person}")
+    
+greet("Tonya")
+"""
+"""
+def outer():
+    global animal
+    animal = "spider"
+    
+outer()
+
+
+print(animal)
+
+score = 100
+
+def double_score():
+    global score
+    score = score * 2
+
+double_score()
+print(score)"""
+
+#*****LIST BASICS**********
+
+"""people = ['charlie', 'cock', 'poop', 'jigged', 'mic', 'poopy']
+
+people.extend("p")
+
+
+
+people[0:1] = ['big balls']
+print(people)
+
+print(people.remove('big balls'))
+print(people.pop(0))
+
+langs = ['python','c','java','cock']
+
+
+cock = 0
+while cock <= len(langs):
+    print('******')
+    print(langs[cock])
+    
+    cock += 1
+    
+for cock in langs:
+    print(cock)"""
+    
+"""num = ['red','blue','orange','green']
+
+num.append("z")
+num.sort(reverse=True)
+
+num1 = num
+
+birthday = '01/03/1997'
+birthday.split('/')
+print(birthday)
+
+colors = [255,43,19]
+
+new_colors = colors
+
+new_colors = colors.copy()
+
+print(id(new_colors))
+print(id(colors))
+print(colors is new_colors)"""
+
+
+"""lst = []
+completed = []
+
+while True:
+    for i in range(len(lst)):
+        print(f"{i+1}) {lst[i]}")
+        
+    cmd = input("Enter TODO command: ")
+    if cmd.lower() == 'q' or cmd.lower() == 'quit':
+        break
+    
+    elif cmd.lower() == 'h' or cmd.lower() == 'help':
+        print("Type 'q' to quit")
+        print("To add a todo to the list, type it and hit enter")
+        print("To complete a todo enter its number")
+        
+    elif cmd.isnumeric():
+        num = int(cmd) 
+        lst.pop(num-1)
+    else:
+        lst.append(cmd)
+        
+        
+    
+print("You've completed ")"""
+
+
+#************************** DICTIONARY *********************
+
+"""order = {
+    'title': 'charlie',
+    'rating': 9.9
+}
+
+print(type(order))
+
+order2 = {
+    3: 'three',
+    4: 'four;',
+    5: 'five',
+    
+}
+print((order2))
+print("*" * 10)
+#how to retrieve value from key
+print(order2[5])
+print("*" * 10)
+#how to add and update in dictonary
+#update
+order['rating'] = order['rating'] + 0.5
+print((order))
+#add
+order['poop'] = 'dick'
+print((order))
+
+#get() method and "in" operator
+prices = {
+    "chicken": 1.99,
+    "beef": 5.99,
+    "fish": 3.50
+}
+#in operator
+product = input("What product are you buying?")
+if product in prices:
+    price = prices[product]
+    print(f"{product} is ${price}")
+else:
+    print("i dont got it")
+    
+#get() method
+product = input("What product are you buying?")
+price = prices.get(product) #assigns value of user input to price
+if price: #check if price has a value. if user input is not in the dict, this will return False
+    
+    print(f"{product} is ${price}")
+else:
+    print("i dont got it")
+    
+#removing items from dict
+prices = {
+    "chicken": 1.99,
+    "beef": 5.99,
+    "fish": 3.50
+}
+
+prices.pop('fish') #removes the key
+print(prices)
+
+prices.popitem() #removes last put in item
+
+prices.clear() #removes everything
+
+#del prices['chicken'] #deletes item but doesnt return it
+
+#dictionmaries are mutable
+
+d1 = {1: "L"}
+d2 = d1
+print(d2) #same thing in memory
+
+d2[2] = 'two'
+#updates to d1 as well
+
+d3 = d1.copy() #no the same dict just a copy
+
+#iterating dicts: .keys(), .values(), .items()"""
+
+"""test_scores = {
+    "mike": 99,
+    "josh": 50,
+    "brandt": 70,
+    "tyler": 45
+}
+
+test_scores.keys()
+#shows a dict_keys([]) object
+list(test_scores.keys())
+#returns a list of all the keys 
+
+for students in test_scores.values(): #iterate through dict. (you can choose .keys() or .values())
+    print(students)
+    
+#find avg with iteration
+total = 0
+for score in test_scores.values(): 
+    print(students)
+    total = total + score
+print(total/len(test_scores))
+
+#.items() gives us a pair of key and value
+print(test_scores.items())
+
+for k,v in test_scores.items(): #iterate in dictionary to get both the key and value
+    print(k,v)
+
+max_score = 0
+best_student = ''
+for k,v in test_scores.items(): #iterate in dictionary to get both the key and value
+    if v > max_score:
+        max = v
+        best_student = k
+print(f"highest score is {v} and best dude is {k}")
+
+#dictonary merging
+d1 = {"a":1, "b":2}
+d2 = {"c":3}
+print({**d1, **d2}) # the starstar allows you to merge them
+
+d1 = {"a":1, "b":2}
+d2 = {"c":3}
+
+d1.update(d2) #adds all of d2 into d1
+print(d1)
+
+d2 = {"c":3}
+
+d3 = d1 | d2 #newest way to combine dictonary
+print(d3)"""
+
+"""# The exercise uses the following "peak" dictionary:
+peak = {
+    "name": "Castle Peak",
+    "height": 14264,
+    "summit_log": [],
+    "cell_reception": {
+        "AT&T": "no reception",
+        "T-Mobile": "poor"
+    }
+}
+# Without touching the original variable declaration (above)...
+# Add a "range" key to peak and set it equal to "Elk Mountains"
+peak['range'] = 'Elk Mountains'
+
+# Add a "first_climbed" key to peak and set it equal to 1873
+peak['first_climbed'] = 1873
+
+# Whoops, there's a mistake with the peak "height".  Update it to 14265
+peak["height"] = 14265
+#print(peak)
+# Add a "Verizon" to the "cell_reception" dict and set it equal to "good"
+peak["cell_reception"]['Verizon'] = 'good'
+#print(peak)
+# You just summited the peak! Add your name to the "summit_log" list
+peak["summit_log"].append("Mike")
+
+
+# Let's rename "height" to "elevation":
+# Remove "height" from the dict and store the result in a variable.
+x = peak.pop('height')
+
+# Use the value for "height" and store it in the dict under they key "elevation"
+peak['elevation'] = x
+
+# Loop over the values in the dictionary and print them all out.  Don't ask why, just do it :) 
+for v in peak.values():
+   print(v) 
+
+# Loop over the keys AND values in the dictionary and print them all out in the following format:
+# key -> value
+# (print an arrow between each pair)
+for k,v in peak.items():
+    print(f"{k} -> {v}")
+
+# A huge earthquake/meteor/forestfire/tsunami has destroyed the peak.  Please empty out the entire dictionary.
+peak.clear()
+
+"""
+"""
+#*****SETS AND TUPLES******
+
+t = (1,2,3,) #once you create tuple, you cant add it remove
+t = ("p,",) #other variation to make a tuple
+t = "p", #other variation to make a tuple
+print(t)
+
+#what we can and not can do with tuples
+colors = "red", 'blue',
+print(colors)
+print(colors[1])
+
+
+print(colors[0:2])
+
+print(colors.index('red'))
+print(colors.count('red'))
+
+for c in colors:
+    print(c)
+    
+#list in tuple is mutable
+stuff = ('big','gay',[],)
+stuff[2].append('mike')
+print(stuff) #stuff = ('big','gay',['mike'],)
+
+#why use tuples. they can be used as keys in dics
+
+#******SETS***
+#unordered collections, must be unique, only immutable elemnts
+evens = {2,4,6,8} #this is a set
+empty_set = set() #this makes an empty set
+empty_dic = {} #this makes us an empty dick
+
+#working with sets
+#adding to a set
+evens.add(10)
+evens.add(12)
+
+evens.add(-1) #sorts numerically. there is no index
+
+evens.remove(6) #remove 6. throws error if not in set
+
+evens.discard(6) #will not throw error if not in set
+
+evens.clear()
+
+for num in evens:
+    print(num)
+    
+#set operators INTERSECTION, UNION, DIFFERENCE
+
+#intersection
+webdev = ('sql','css','html','js','python',)
+data = ('R', 'SQL', 'python')
+both = webdev & data #puts kets in both if they are both present in each set
+
+#union
+
+both1 = webdev | data #combines all of them
+
+#difference
+both2 = data - webdev #returns only the differences from left set that are not in right set
+"""
+
+#returning to functions
+
+#args
+"""def count_stuff(*args):
+    print(f"You passed me {len(args)} arguments")
+    
+count_stuff(True,True,12,3,4,54)
+
+def sum(*nums):
+    total = 0
+    
+    for num in nums:
+        total += num
+    return total
+
+print(sum(10,20))
+
+def silly(first, second, *others):
+    print(f"first {first}, second {second}, others is {others}")
+    
+silly(True,5,10,12,[])"""
+
+
+#kwargs which is keyword arguements
+
+"""def demo(**kwargs):
+    
+    print(kwargs)
+    
+    
+demo(color="red",age=12)
+
+def print_ages(**kwargs):
+    for k,v in kwargs.items():
+        print(k,v)
+        
+print_ages(age1=1,age2=2,age3=3)
+
+#parameter list ordering
+def display_info(person, status="single", *args):
+    print(f"person is {person}")
+    print(f"status is {status}")
+    print(f"args is {args}")
+   # print(f"args is {kwargs}")
+
+display_info('colt')"""
+
+"""def add_thrice(val, lst=None):
+    if lst is None:
+        lst = []
+    lst.append(val)
+    lst.append(val)
+    lst.append(val)
+
+    return lst
+
+print(add_thrice(7,[1,2,3]))"""
+
+
+# ============== PART 1 ============== 
+# Write a function called contains_pickle that accepts any number of arguments. 
+# The function should return True if it is passed "pickle" as one of the args
+# Otherwise it should return False
+
+#  contains_pickle("red", 45, "pickle", [])  --> True
+#  contains_pickle(1,2, "blue") ---------------> False
+
+"""def contains_pickle(*args):
+    if args == 'pickle':
+        return True
+    else:
+        
+        return False
+   
+print(contains_pickle('pickle'))
+
+
+# ============== PART 2 ============== 
+# Write a function called count_fails that counts up the number of failing test scores it is passes
+# It should accept any number of arguments
+# It should return a count of how many args are less than or equal to 50
+
+# count_fails(99,48,79,36) -------> 2
+# count_fails(85,78,91) ----------> 0
+# count_fails(50,41,47,74,76,81) -> 3
+
+def count_fails(*args):
+    
+    count = 0
+    
+    for arg in args:
+        if arg <= 50:
+            count = count + 1
+    return count
+            
+
+
+print(count_fails(99,80,20,40,60,50))
+
+
+# ============== PART 3 ============== 
+# Write a function called get_top_students that helps teachers find their A-grade students!
+# It should accept any number of student=score keyword arguments like colt=78 or elton=98
+# It should return a list containing the names of students who scored 90 or above
+
+def get_top_students(**kwargs):
+    lst = []
+    for k,v in kwargs.items():
+        if v >= 90:
+            lst.append(k)
+            
+    return lst
+    
+    
+
+print(get_top_students(colt=78,mike=80,dick=90,poop=95))   
+
+# get_top_students(tim=91, stacy=83, carlos=97, jim=69) -> ['tim', 'carlos']
+# get_top_students(colt=61, elton=76) -------------------> []
+# get_top_students(kitty=80, blue=95, toad=91)-----------> ['blue', 'toad']
+"""
+
+#***********Working with errors*********
+
+#raise ValueError("noob")
+
+#raise Exception
+"""print("hello")
+'penis'
+print('hi')
+
+
+
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    num = 8
+    print("EXCEPT RUNNING")
+except EOFError:
+    print("you didnt enter anything")
+    num = 0
+print(f"You entered {num}")
+
+
+
+total = s1+s2+s3
+avg = total / 3
+if avg > 50:
+    x = 'go'
+    return x
+elif avg < 50:
+    y = 'nogo'
+    return y
+
+"""
+    
+"""def poop():
+    integer = 0
+    limit = 30
+    for i in range(1, (limit+1)):
+        print(integer*i)
+
+
+
+print(poop())"""
+
+
+#************** BEGINNING OF PRACTICE QUESTIONS REFERENCE. NOT FINISHED YET **************************************
+
+#STRINGS LEVEL 1
+
+#8 Print the Character at a Given Index
+"""s = "world"
+i = 15
+if len(s) == 0:
+    print("Empty String")
+elif i < len(s):
+    print(s[i])
+else:
+    print("string out of range")
+    """
+#9  Reverse a String
+"""s = 'Hello'
+print(s[::-1])"""
+
+#10 First and Last Three Characters of a String
+"""s = "Wonderful"
+if len(s) < 6:
+    print("")
+else:
+    print(s[:3]+s[-3::])"""
+
+#14  Remove Characters at Even Indices
+"""s = "Coding"
+new_s = ""
+for i in range(len(s)):
+    if i % 2 != 0:
+        new_s = new_s + s[i]
+print(new_s)
+
+#option 2
+s = "Coding"
+new_s = ""
+for i in range(1, len(s), 2):
+    new_s = new_s + s[i]
+print(new_s)
+
+"""
+
+
+#16 Check if a String Only Contains Numbers
+
+"""s = "1"
+
+if s.isnumeric() == True:
+    print(True)
+else:
+    print(False)
+    
+#18 Remove nth Character from a String
+s = 'Hello'     # H E L L O
+n = 4           # 0 1 2 3 4  
+news = ''    
+for i in range(len(s)):
+    if i != n:
+        news = news + s[i]
+print(news)"""
+
+#20 Replace a Character in a String
+"""s = "hello"
+curr_char = 'l'
+new_char = 's'
+output = s.replace(curr_char,new_char)
+print(output)
+
+s = "hello"
+curr_char = 'l'
+new_char = 's'
+new_s = ''
+
+for char in s:
+    if char == curr_char:
+        new_s = new_s + char"""
+#Strings Level 2
+#23 Change Commas by Dots
+"""s = 'Hello, World'
+
+print(s.replace(",", "."))
+
+#option 2
+s = 'Hello, World'
+comma = ","
+dot = '.'
+new_s = ""
+
+for i in s:
+    if i == comma:
+        new_s = new_s + dot
+    else:
+        new_s = new_s + i"""
+        
+#24 Check if String Contains All Letters in the Alphabet
+"""# ---------------------
+# Option 1
+# ---------------------
+import string
+
+s = "The quick brown fox jumps over the lazy dog"
+
+set_s = set(s.lower())
+set_s.remove(" ")
+print(set_s == set(string.ascii_lowercase))
+
+# ---------------------
+# Option 2
+# ---------------------
+import string
+
+s = "The quick brown fox jumps over the lazy dog"
+is_pangram = True
+
+for char in string.ascii_lowercase:
+    if char not in s.lower():
+        is_pangram = False
+
+print(is_pangram)
+
+# ---------------------
+# Option 3
+# ---------------------
+import string
+
+s = "The quick brown fox jumps over the lazy dog"
+is_pangram = True
+
+for char in string.ascii_lowercase:
+    if char not in s.lower():
+        is_pangram = False
+        break # Stop the loop immediately
+
+print(is_pangram)"""
+
+#27 Remove Spaces from a String
+"""s = 'Hello, World!'
+penis = s.replace(" ", "")
+print(penis)
+
+#option 2
+s = 'Hello, World!'
+new_s = ""
+
+for char in s:
+    if char != " ":
+        new_s += char
+print(new_s)
+"""
+#29 Check if a String Starts with a Prefix
+"""s = "Coding"
+prefix = "Con"
+
+if prefix == s[0:2]:
+    print(True)
+else:
+    print(False)
+#option 2
+s = "Coding"
+prefix = "Con"
+print(s[:len(prefix)] == prefix)"""
+
+#31 Check if a String Ends with a Suffix
+"""s = "Hello"
+suffix = 'ello'
+
+print(s[-len(suffix):] == suffix)
+"""
+
+#34 Reverse Words in a String
+"""
+s = 'Hello World'
+
+print(s[::-1])
+
+
+#option 2
+
+s = "Hello World"
+
+words_list = s.split(" ")
+new_s = ""
+
+for word in words_list:
+	reversed_word = "".join(reversed(word))
+	swapped_case = reversed_word.swapcase()
+	new_s += swapped_case + " "
+
+new_s.rstrip()
+
+print(new_s)
+"""
+#36. Count Repeated Characters (*)
+"""s = "Corporation"
+count = 0
+repeated_chars = []
+
+for i in s:
+    if (s.count(i) > 1) and (i not in repeated_chars):
+        count =+ 1
+        repeated_chars.append(i)
+print(count)
+
+if len(repeated_chars) > 0:
+    for i in sorted(repeated_chars):
+        print(i, end=" ")
+    else:
+        print(None)"""
+
+#37. Sort Words in Alphabetical Order (*)
+"""s = 'Hello World'
+new_s = ""
+
+words_list = s.split(" ")
+for word in words_list:
+    lowercase_word = word.lower()
+    sorted_word = "".join(sorted(lowercase_word))
+    new_s += sorted_word + " "
+new_s.rstrip()
+print(new_s)
+
+"""
+
+"""lst = [1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
+def q1(lst):
+    num_set = set()
+   
+    for i in range(len(lst)):
+        if lst[i] in num_set:
+            return lst[i]
+        else:
+            num_set.add(lst[i])
+
+    return num_set
+print(q1(lst))"""
+
+#42 Multiply all Elements in a List
+
+"""lst = [3,4,5,6]
+factor = 2
+
+for i in range(len(lst)):
+    lst[i] *= factor
+
+print(lst)"""
+
+#44  Print Elements on the Same Line Without Commas
+"""lst = ['a','b','c']
+for i in lst:
+    print(i, end=" ")
+    
+lst = ['a','b','c']
+print(*lst, sep=" ")
+"""
+#44 Get Max and Min Values
+"""lst = []
+
+if lst:
+    print(max(lst), min(lst))
+else:
+    print(None)
+    """
+#46 Check if List is Empty or Not
+"""lst = [1]
+
+if len(lst) == 0:
+    print("Empty")
+else:
+    print("Not Empty")"""
+    
+#51 Print the Elements and Their Indices
+
+"""lst = ['a','b','c']
+if lst == 0:
+    print("Empty Lst")
+else:
+    for i in range(len(lst)):
+        print(lst[i], i)"""
+#53 Remove Matching Element
+
+"""lst = ['a','b']
+elem_to_remove = 'b'
+new_lst= []
+
+if len(lst) == 0:
+    print("Empty List")
+else:
+    for i in lst:
+        if elem_to_remove in lst:
+            lst.remove(elem_to_remove)
+            new_lst = lst
+            break
+        else:
+            print("Element not found")
+
+print(new_lst)"""
+#53 Remove Duplicate
+"""lst = [1,1,2,3,4,4]
+lst = list(set(lst))
+
+print(lst)"""
+
+#55 Count Elements Greater than 3
+
+"""lst = [1,2,7,8,9,10]
+counter = 0
+
+for i in range(len(lst)):
+    if lst[i] > 3:
+        counter += 1
+print(counter)
+
+#option 2
+counter = sum(1 for i in lst if i > 3)"""
+
+#59 Find the Intersection of Two Sets
+"""set1 = {1,2,3,4}
+set2 = {5,6,7,8}
+intersection = {}
+
+if set1 & set2 == 0:
+    print(intersection)
+else:
+    intersection = set1 & set2
+
+print(intersection)"""
+
+
+#63 Difference Between Two Lists
+
+"""lstA = [1,2,3,4]
+lstB = [1,2]
+bothlst = []
+
+for i in lstA: # were looking at every i in lstA
+    if i not in lstB: #if each i isnt in lstB i.e, 3 and 4, its gonna add them to bothlst
+        bothlst.append(i)
+    
+
+print(bothlst)"""
+
+#65 Distance Between Two 3D Points
+"""# -----------------
+# Option 1
+# -----------------
+
+pointA = [3, 4, 5]
+pointB = [1, 3, 5]
+
+distance = ((pointA[0] - pointB[0])**2
+			+ (pointA[1] - pointB[1])**2
+			+ (pointA[2] - pointB[2])**2)**(1/2)
+
+print(distance)
+
+# -----------------
+# Option 2
+# -----------------
+
+import math
+
+pointA = [3, 4, 5]
+pointB = [1, 3, 5]
+
+addition = ((pointA[0] - pointB[0])**2
+			+ (pointA[1] - pointB[1])**2
+			+ (pointA[2] - pointB[2])**2)
+
+distance = math.sqrt(addition)
+
+print(distance)"""
+
+#66 Print Common Elements in Two Lists
+"""lstA = []
+lstB = [1,2,3,4]
+lstC = []
+if set(lstA) & set(lstB):
+    lstC = set(lstA) & set(lstB)
+print(lstC)
+
+
+#option 2
+listA = [1, 2, 3, 4]
+listB = [1, 2, 3, 4]
+
+common_elem = []
+
+for elem in listA:
+	if elem in listB:
+		common_elem.append(elem)
+
+print(common_elem)"""
+
+#68 Find the Second Largest Value in a List
+# ---------------
+# Option 1
+# ---------------
+"""my_list = [1, 2, 3, 4]
+
+if len(my_list) > 1:
+	sorted_list = sorted(my_list)
+	print(sorted_list[-2]) #bc its sorted, -1 is the large value in the list
+else:
+	print(None)
+
+# ---------------
+# Option 2
+# ---------------
+my_list = [1, 2, 3, 4]
+
+if len(my_list) > 1:
+	no_duplicates = set(my_list) #removes duplicates
+	no_duplicates.remove(max(no_duplicates)) #removes the 1st max value
+	print(max(no_duplicates)) #prints the newest max value in the set, which was the second max value before bc now the first one is gone.
+else:
+	print(None)"""
+
+#71 Find the Second Smallest Value in a List
+"""my_list = [1, 2, 3, 4]
+
+if len(my_list) > 1:
+	sorted_list = sorted(my_list) #sorts from smallest to biggest
+	print(sorted_list[1]) #prints the second element, which is index one. Bc index 0 is the first element.
+else:
+	print(None)
+
+# ---------------
+# Option 2
+# ---------------
+my_list = [1, 2, 3, 4]
+
+if len(my_list) > 1:
+	no_duplicates = set(my_list) #removes duplicates
+	no_duplicates.remove(min(no_duplicates)) #removes the smallest number
+	print(min(no_duplicates)) #prints the newest smallest  value in the set, which was the second smallest value before bc now the first one is gone.
+else:
+	print(None)"""
+#73 Make a Frequency Dictionary from the Elements of a List (*)
+"""lst = ['a','a','b','c','a','b']
+
+dict = {}
+for word in lst:
+    if word not in dict: #checking if that specific word isnt already in the dictionary
+        dict[word] = 1 #if its not there, its gonna add the word as a key value pair and give add 1 bc it found it once. (when it loops, in the Else, it will increment the 1 if it finds it again)
+    else:              #[word] is always the key when adding to a dictionary DICK SACK
+        dict[word] += 1 #increment by 1 bc we found an occurence of that word
+print(dict)"""
+
+#75 Flatten a List that Contains Lists (*) #flat means no nested lists
+"""my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+new_list = []
+
+for i in my_list: # iterate through my_list
+    if type(i) is list: #check if the index is a list, bc its a nested list, each list in the my_list is considered an index. i.e, index 0 is the [1,2,3] gay shit
+        for item in i: # check each index in the list thats in the my_list. so index 0 is the 1 specifically.
+            new_list.append(item) #add that 1 to the new list. then repeat the loop to 2, then 3, then the [4,5,6] etc...
+    else:
+        new_list.append(item) # if its not in a list in the my_list, its just gonna add it like a ball sack
+print(new_list)    """
+
+#77 Generate all Permutations of a List (*)
+"""lst = [1,2,3]
+import itertools
+
+
+perm = list(itertools.permutations(lst))
+print(perm)"""
+#82 Check if a Key Exists in a Dictionary
+"""dic = {
+    "a": 4,
+    "b": 6,
+}
+key = "a"
+
+if key in dic:
+    print(True)
+else:
+    print(False)"""
+#84 Add a Key-Value Pair Only if the Key is Not in the Dictionary
+
+"""dic = {
+    "January": 45,
+    "February": 56,
+    "March": 67
+}
+
+k = "April"
+v = 67
+if k not in dic.items():
+    dic[k] = v
+
+print(dic)
+        """
+#84 Merge Two Dictionaries
+"""dict1 = {'a': 10, 'b': 8}
+dict2 = {'d': 6, 'c': 4}
+
+dict3 = {**dict1, **dict2}
+dict3 = dict1 | dict2
+
+print(dict3)"""
+#84 Check if all values are equal in dictionary
+
+"""dict = {'d': 4, 'c': 4}
+
+unique_values = len(set(dict.values()))
+if unique_values == 0:
+    print("Empty")
+elif unique_values == 1:
+    print(True)
+else:
+    print(False)"""
+
+#91 Find max value in dictionary
+
+"""dict = {'a': 10, 'b': 8}
+
+if len(dict) == 0:
+    print("None")
+else:
+    max_a = dict.values()
+    max_b = max(max_a)
+    
+print(max_b)"""
+
+#93 Find the Minimum Value in a Dictionary
+"""dict = {'a': 10, 'b': 8}
+
+if len(dict) == 0:
+    print("None")
+else:
+    min_a = dict.values()
+    min_b = min(min_a)
+    
+print(min_b)
+
+#option 2:
+if dict:
+    min_value = min(set(dict.values()))
+    print(min_value)
+else:
+    None"""
+    
+#*************** DICTIONARY LEVEL 2 *******************************
+
+#96 Find Frequency of Values in a Dictionary
+"""my_dict = {
+	"a": 4,
+	"b": 4,
+	"c": 2,
+	"d": 7,
+	"e": 4,
+	"f": 2,
+	"g": 7,
+	"h": 7
+ }
+
+dict = {}
+count = 0
+for i in my_dict.values():
+    if i in dict:
+        dict[i] += 1
+    else:
+        dict[i] = 1
+print(dict)"""
+
+#98. Make a Dictionary from Nested Lists
+
+"""my_list = [["a", 1], ["b", 2], ["c", 3], ["d", 4]]
+
+new_dict = {}
+
+for nested_list in my_list:
+	key = nested_list[0] 
+	value = nested_list[1]
+	new_dict[key] = value
+
+print(new_dict)"""
+
+#100 Print the Max Sum of Values
+"""my_dict = {
+	"a": [1, 2, 3],
+	"b": [4, 0, -4],
+	"c": [3, 5, 9],
+	"d": [45, 12, 100]
+}
+
+for i in my_dict.values():
+    x = sum(i)
+print(x)
+
+#option 2
+
+max_sum = None
+
+for list_value in my_dict.values():
+	list_sum = sum(list_value)
+
+	if max_sum is None:
+		max_sum = list_sum
+	elif max_sum < list_sum:
+		max_sum = list_sum
+
+print(max_sum)"""
+
+#103 Make a Frequency Dictionary for the Characters in a String (*) BIG BALLS
+"""strng = "Hello, World"
+dict = {}
+
+for i in strng.lower():
+    if i.isalpha():
+        if i not in dict:
+            dict[i] = 1
+        else:
+            dict[i] += 1
+print(dict)"""
+    
+#105 Sort Lists in Ascending Order (*)
+my_dict = {
+	"a": [4, 3, 2],
+	"b": [5, 3, 7],
+	"c": [1, 9, 10],
+	"d": [3, 4, 1]
+}
+
+lst = []
+for i in my_dict.values():
+    i.sort()
+        
+print(my_dict)
+#111. Zero, Positive, or Negative
+"""
+num = 1
+
+if num > 0:
+    print("positive")
+elif num == 0:
+    print("zero")
+elif num < 0:
+    print("negative")"""
+    
+#111. Check Vowels and Consonants
+
+"""string = "score: 36"
+
+for i in string.lower():
+    if i in "aeiou":
+        print(i, "is a vowel")
+    elif not i.isalpha():
+        print(i, "not a letter")
+    elif i not in 'aeiou':
+        print(i, "is a Consonants")
+    """
+        
+#114. Print Max of Three Numbers
+"""a = 1
+b = 3
+c = 4
+
+print(max(a,b,c))"""
+
+#option 2
+
+"""if (a >= b) and (a >= c):
+   print(a)
+elif (b >= a) and (b >= c):
+   print(b)
+else:
+   print(c)
+   """
+#118. Print Max of Three Numbers
+"""a = 1
+b = 3
+c = 4
+
+print(min(a,b,c))
+
+#option 2
+if (a <= b) and (a <= c):
+	print(a)
+elif (b <= a) and (b <= c):
+	print(b)
+else:
+	print(c)"""
+ #118. Challenge four seasons
+"""season_num = 1
+
+if season_num == 1:
+    print("Spring")
+elif season_num == 2:
+    print("Summer")
+elif season_num == 3:
+    print("Fall")
+elif season_num == 4:
+    print("Winter")
+else:
+    print("Please enter a valid number")
+    """
+#122. Challenge four seasons
+"""a = 3
+b = 3
+c = 4
+ 
+if a == b and a == c and b == c:
+     print("Equal")
+else:
+    print("Not equal")"""
+#140 Print the First 15 Positive Integers
+"""for i in range(1,16):
+    print(i)"""
+#142 Print Integers in Reverse Order (from n to 1)
+"""n = 6
+
+for i in reversed(range(1,n+1)):
+    print(i)
+    
+#option 2
+for i in range(n,0,-1):
+    print(i)"""
+#144 Sum of First 100 Positive Integers
+"""total = 0
+
+for i in range(1, 101):
+	total += i
+
+print(total)
+"""
+#146 print the mulitplication table
+"""n = 3
+
+print(f"=== Multiplication table of {n}=== ")
+for i in range(1,11):
+    print(f"{n} x {i} = {n*i}")"""
+
+#148 Print the Alphabet using a Loop
+
+"""for i in range(65,91):
+    print(chr(i))"""
+    
+#150 First 100 Even Numbers
+"""for i in range(1,201,2):
+    print(i)"""
+    
+#option 2: 
+"""for i in range(1, 201):
+    if i % 2 == 0:
+        print(i)
+        """
+#150 Calculate Factorial
+"""n = int(input("Enter the value of 'n': "))
+
+factorial = 1
+
+for i in range(2, n+1):
+	factorial *= i
+
+print(factorial)"""
+
+#203 Read a Text File
+
+"""file_path = "text.txt"
+
+file_content = []
+with open(file_path) as file:
+    for line in file:
+        file_content.append(line)
+print(file_content)
+"""
+#205 Print the First n Lines of a File
+"""file_path = "text.txt"
+
+n = int(input("Enter how many lines you wanna read"))
+
+with open(file_path) as file:
+    lines = file.readlines() #returns all lines in the file as a list. each line is an individual element in list.
+    num_lines = len(lines) #takes the length of the list to know how many lines are in the file and store it in num_lines
+    
+    if num_lines < n:
+        print(f"Please enter a valid value. the file has {num_lines} lines")
+    else:
+        for i in range(n): #iterate through number of lines specified by user. 0,1...,n-1
+            print(lines[i].strip("\n")) # if we dont call strip, it will have a new line character between the lines. so it'll look like empty spaces and be ugly bc ballsacks."""
+            
+#205 Print the Last n Lines of a File
+"""file_path = "text.txt"
+
+n = int(input("Enter how many lines you wanna read"))
+
+with open(file_path) as file:
+    lines = file.readlines() 
+    num_lines = len(lines) 
+    
+    if num_lines < n:
+        print(f"Please enter a valid value. the file has {num_lines} lines")
+    else:
+        for i in range(-n,0): #remember you monke, the range method format is range(start,stop), so, we start at -n, which means goes back, then we end at 0. Which means its going backwards
+            print(lines[i].strip("\n")) """
+
+#209 Find the Longest Word in a File
+"""file_path = "text.txt"
+
+longest_word = "" #empty string to store word
+with open("text.txt") as file:
+    for word in file:
+        if len(word) > len(longest_word): #so if the word on the line is greater than whatever is in the string, it will put that word into the longest_word. 
+            longest_word = word
+
+print(longest_word)"""
+            
+#212 Make Frequency Dictionary of the Words in a File. Matches how many times a word occurs in a file.
+"""file_path = "text.txt"
+
+freq_dict = {} #update count of the word here
+
+with open(file_path) as file:
+    for word in file:
+        word = word.strip("\n") #stripping whitespace to not confuse python and reading the lines
+        if word not in freq_dict: #checking if that specific word isnt already in the dictionary
+            freq_dict[word] = 1 #if its not there, its gonna add the word as a key value pair and give add 1 bc it found it once. (when it loops, inm the Else, it will increment the 1 if it finds it again)
+        else:
+            freq_dict[word] += 1 #increment by 1 bc we found an occurence of that word
+print(freq_dict)"""
+
+"""def first_non_consecutive(lst):
+    for i, j in enumerate(lst, lst[0]):
+        if i!=j:
+            return j
+
+first_non_consecutive([1,2,3,4,6,7,8])
+"""
+
+
+
+
